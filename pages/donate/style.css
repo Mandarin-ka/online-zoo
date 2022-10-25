@@ -1,0 +1,752 @@
+#start-screen-section-donate{
+    background: url('../../pages/assets/img/panda_bg.png');
+    height: 384px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#donate{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    padding-bottom: 180px;
+}
+
+.donate-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 43px;
+}
+
+.donate-section h2{
+    font-size: 36px;
+    color: white;
+    font-weight: 400;
+    max-width: fit-content;
+    margin: auto;
+    max-width: 1160px;
+}
+
+.donate-section p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    max-width: 1160px;
+    width: 100%;
+    margin: 10px auto 0;
+    line-height: 24px;
+}
+
+.donate-section h3{
+    font-size: 36px;
+    color: #FE9013;
+    font-weight: 400;
+    margin-top: 40px;
+    margin:40px 0 0;
+}
+
+.donate-block{
+    width: 976px;
+    padding: 40px 92px 62px;
+    margin: auto;
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    margin-top: 65px;
+    position: relative;
+}
+
+.donate-block h2{
+    padding-right: 6px;
+    font-size: 48px;
+    color: #FE9013;
+    margin: auto;
+    width: fit-content;
+}
+
+.donate-block p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333B41;
+    line-height: 120%;
+    width: fit-content;
+    margin: 20px 0 40px;
+}
+
+.animal-diet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 532px;
+    margin: 65px auto 0;
+    padding-right: 7px;
+}
+
+.cross{
+    height: 1.5px;
+    width: 20px;
+    margin-top: 28px;
+    margin-right: 53px;
+    transform: rotate(-45deg);
+    background-color: #333B41;
+}
+
+.cross:before{
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 20px;
+    background-color: #333B41;
+    transform: rotate(90deg);
+}
+
+.animal-diet-number{
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.number-diet{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 57.6px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.animal-diet-content{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.donate-bar-block{
+    margin-top: 50px;
+}
+
+.donate-bar-block span{
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    margin: auto;
+}
+
+.donate-bar-input{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: #404950;
+    margin-top: 17px;
+    position: relative;
+    flex-direction: column;
+}
+
+.donate-line{
+    background-color: #72828E;
+    height: 2px;
+    width: 93.75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donate-point{
+    background-color:#FFEE2E;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+}
+
+.donate-point:before,
+.donate-point:after{
+    content: '';
+    opacity: 0;
+    border: 2px solid orange;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -8px;left: -8px;right: 0;bottom: 0;
+    cursor: pointer;
+}
+
+.donate-point.active:before{
+    content: '';
+    opacity: 1;
+    display: block;
+    border: 2px solid orange;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -8px;left: -8px;right: 0;bottom: 0;
+    cursor: pointer;
+}
+
+.donate-point.active:after{
+    content: '';
+    opacity: 1;
+    display: block;
+    border: 2px solid orange;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -17px;left: -17px;right: 0;bottom: 0;
+    cursor: pointer;
+}
+
+.donate-point:hover:before,
+.donate-point:hover:after{
+    opacity:1;
+}
+
+
+
+.donate-point:after{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -17px;left: -17px;right: 0;bottom: 0;
+    cursor: pointer;
+}
+
+#money{
+    border: 1px solid #929699;
+    color: #929699;
+    width: 248px;
+    height: 20px;
+    background-color: #ffffff00;
+    margin:- auto;
+    font-size: 16px;
+    padding: 16px 9px;
+    color:#333B41;
+}
+
+#money::placeholder{
+    color: #929699;
+}
+
+.money{
+    padding-top: 92px;
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    max-width: 268px;
+    height: fit-content;
+}
+
+.donate-prices{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 948px;
+    top: 39px;
+    right: 29px;
+}
+
+.price{
+    color: #333B41;
+    font-size: 26px;
+    font-weight: 500;
+    max-width: 57px;
+}
+
+.price.active{
+    color: #FE9013;
+}
+
+label{
+    position: absolute;
+    top: 109px;right: 12px;bottom: 0;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.period-type input{
+    border: #F9804B;
+    background-color: #ffffff00;
+}
+
+.period{
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+    position: absolute;
+    margin: 14px auto;
+    height: fit-content;
+    top: 50px; right: 0px; left: 26px; bottom: 0;
+}
+
+.period-type{
+    display: flex;
+    width: 84px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.period-type span{
+    color: #333B41;
+}
+
+.period-type input[type=radio] {
+	display: none;
+}
+
+.period-type label {
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 25px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+	user-select: none;
+    position: relative;
+    height: fit-content;
+
+}
+
+.period-type label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	background: url(https://snipp.ru/img/radio-1.png) 0 0 no-repeat;
+}
+
+.period-type input[type=radio]:checked + label:before {
+	background: url(https://snipp.ru/img/radio-2.png) 0 0 no-repeat;
+}
+
+.period-type label:hover:before {
+	filter: brightness(120%);
+}
+
+.period-type input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}
+
+.feed{
+    display: block;
+    margin:80px auto 0;
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.feed:hover{
+    transition: 0.2s;
+    background: linear-gradient(113.96deg, #E47209 1.49%, #E47209 101.44%);
+}
+
+.feed:active{
+    transition: 0.2s;
+    background: linear-gradient(113.96deg, #4b9200 1.49%, #4b9200 101.44%);
+}
+
+.donate-block .share{
+    font-size: 16px;
+    margin: 30px auto 0;
+}
+
+@media screen and (max-width: 1599px) {
+
+    #start-screen-section-donate{
+        width: 100%;
+        height: 470px;
+        background-size: cover;
+        background-position:  center;
+    }
+
+    .start-screen-block{
+        max-height: 390px;
+    }
+
+    .donate-section{
+        padding-top: 0;
+        margin-top: 10px;
+    }
+
+    #donate{
+        padding-bottom: 30px;
+    }
+
+    .donate-section h2{
+        max-width: 780px;
+        line-height: 47px;
+        margin: 0 0 15px;
+    }
+
+    .donate-section p{
+        line-height: 22.4px;
+        margin-top: 20px;
+    }
+
+    .donate-block {
+        max-width: 849px;
+        margin:50px auto 0;
+        padding: 15px 44px 45px 47px;
+    }
+
+    .donate-block h2{
+        width: 463px;
+        margin: 10px auto 0;
+    }
+
+    .donate-bar-input{
+        max-width: 810px;
+        margin: 10px auto 0;
+    }
+
+    .donate-line{
+        width: 785px;
+    }
+
+    .donate-point:first-child{
+        display: none;
+    }
+
+    .price:first-child{
+        display: none;
+    }
+
+    .donate-prices{
+        max-width: 830px;
+        margin: 0 auto;
+        top: 35px; left: 0; right: 0; bottom: 0;
+    }
+
+    .donate-bar-block span{
+        margin-left: 15px;
+    }
+
+    .donate-section h3{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #start-screen-section-donate{
+        width: 100%;
+        max-height: 369px;
+        height: 369px;
+        min-height: 369px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .donate-section{
+        padding: 0  20px;
+    }
+
+    .donate-section h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .donate-section p{
+        margin-top: 0;
+    }
+
+    .donate-block{
+        max-width: 600px;
+        margin: 25px auto;
+        padding: 15px 0 30px;
+    }
+
+    .donate-block h2{
+        font-size: 48px;
+        width: fit-content;
+        margin: 30px auto 0;
+    }
+
+    .donate-block p{
+        margin: 35px auto;
+        text-align: center;
+        line-height: 29px;
+    }
+
+    .animal-diet{
+        max-width: 532px;
+        margin:0px auto 0;
+        padding-top: 15px;
+    }
+
+    .donate-bar-block{
+        margin-top: 40px;
+    }
+
+    .donate-bar-input{
+        width: 600px;
+    }
+
+    .donate-line{
+        width: 530px;
+    }
+
+    .donate-point:nth-child(2),
+    .donate-point:nth-child(3){
+        display: none;
+    }
+
+    .price:nth-child(2),
+    .price:nth-child(3){
+        display: none;
+    }
+
+    .donate-prices{
+        width: 570px;
+        margin: 8px auto 0;
+    }
+
+    #money{
+        border: 1px solid #929699;
+        color: #929699;
+        width: 164px;
+        height: 20px;
+        background-color: #ffffff00;
+        margin:- auto;
+        font-size: 16px;
+        padding: 10px 10px 11px 6px;
+        color:#333B41;
+        margin-top: 5px;
+    }
+    
+    #money::placeholder{
+        color: #929699;
+    }
+
+    label{
+        position: absolute;
+        top: 109px;right: 12px;bottom: 0;
+    }
+
+    .period{
+        top: 50px; right: 0px; left: 0px; bottom: 0;
+    }
+
+    #donate{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    #start-screen-section-donate{
+        width: 100%;
+        max-height: 217px;
+        height: 217px;
+        min-height: 217px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .donate-section{
+        padding: 0;
+    }
+
+    .donate-section h2{
+        font-weight: normal;
+    }
+
+    .donate-section h3{
+        font-size: 24px;
+    }
+
+    .donate-block{
+        min-width: 300px;
+        max-width: 600px;
+        width: calc(100% - 20px);
+        padding: 0;
+    }
+
+    .donate-block h2{
+        font-size: 24px;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .donate-block p{
+        font-size: 16px;
+        line-height: 22.5px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .number-diet{
+        font-size: 40px;
+        font-weight: 800;
+        height: fit-content;
+        line-height: normal;
+    }
+
+    .animal-diet-content{
+        font-size: 9px;
+        line-height: normal;
+        max-width: 90px;
+        margin-top: 0;
+    }
+
+    .animal-diet-number{
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+
+    .animal-diet{
+        max-width: 300px;
+        padding-top: 0;
+        position: relative;
+    }
+
+    .animal{
+        max-width: 160px;
+        margin-top: 10px;
+    }
+    
+    .cross{
+        position: absolute;
+        top: 0; right: 0; bottom: -30px; left: -110px;
+    }
+
+    .cross,
+    .cross:before{
+        width: 12px;
+        height: 1px;
+        margin: auto;
+    }
+
+    .donate-bar-block span{
+        margin-left: 0;
+    }
+
+    .donate-bar-block{
+        margin-top: 5px;
+    }
+
+    .donate-bar-input{
+        height: 15px;
+        width: 100%;
+    }
+
+    .donate-line{
+        height: 1px;
+        min-width: 260px;
+        width: 90%;
+    }
+
+    .donate-point{
+        width: 6px;
+        height: 6px;
+    }
+
+    .donate-point:before,
+.donate-point:after{
+    content: '';
+    opacity: 0;
+    border: 1px solid orange;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -8px;left: -8px;right: 0;bottom: 0;
+    cursor: pointer;
+}
+
+.donate-point.active:before{
+    content: '';
+    opacity: 1;
+    display: block;
+    border: 1px solid orange;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -4px;left: -4px;right: 0;bottom: 0;
+    cursor: pointer;
+}
+
+.donate-point.active:after{
+    content: '';
+    opacity: 1;
+    display: block;
+    border: 1px solid orange;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -9px;left: -9px;right: 0;bottom: 0;
+    cursor: pointer;
+}
+
+    .donate-prices{
+        min-width: 285px;
+        width: 95%;
+        top: 12px;
+    }
+
+    .price{
+        font-size: 13px;
+        
+    }
+    
+    .money{
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    label{
+        position: absolute;
+        top: 17px;right: 10px;bottom: 0;
+    }
+
+    .share{
+        width: 301px !important;
+        font-size: 16px;
+        margin: 25px auto 20px auto !important;
+    }
+
+    #donate{
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .donate-section h3{
+        display: block;
+        width: 1160px;
+        margin: auto !important;
+    }
+}
